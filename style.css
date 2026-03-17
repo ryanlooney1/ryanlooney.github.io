@@ -269,6 +269,19 @@ img {
   .ba-table tr{ display:flex; flex-direction:column; gap:24px; }
   .ba-table td img{ width:100%; }
 }
+.ba-divider-cell{
+  padding:0 8px;
+  vertical-align:middle;
+}
+.ba-divider-head{
+  padding:0;
+}
+.ba-divider{
+  font-size:20px;
+  color:var(--accent);
+  font-weight:600;
+  white-space:nowrap;
+}
 
 /* ── Checklist ── */
 .checklist{
