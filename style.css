@@ -47,7 +47,7 @@ h3{margin:10px 0 18px;font-weight:500;color:var(--muted);}
   margin:8px 0 16px;
   font-size:14px;
   font-weight:600;
-  color:var(--accent);
+  color:var(--muted);
   letter-spacing:.01em;
 }
 .stat-dot{
