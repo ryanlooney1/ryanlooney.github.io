@@ -213,6 +213,29 @@ img {
   }
 }
 
+/* ── Pull quote ── */
+.pullquote{
+  margin:0;
+  padding:28px 32px;
+  background:rgba(107,142,139,.08);
+  border-left:4px solid var(--accent);
+  border-radius:16px;
+}
+.pullquote blockquote{
+  margin:0 0 14px;
+  font-size:1.15rem;
+  font-style:italic;
+  line-height:1.6;
+  color:var(--text);
+}
+.pullquote cite{
+  font-size:13px;
+  font-weight:600;
+  color:var(--muted2);
+  font-style:normal;
+  letter-spacing:.02em;
+}
+
 /* ── Before / After table ── */
 .ba-table{
   display:flex;
