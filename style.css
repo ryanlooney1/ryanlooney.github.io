@@ -234,13 +234,40 @@ img {
   justify-content:center;
 }
 
+.project-visual{position:relative;}
+
+.project-visual::before,
+.project-visual::after{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+}
+
+/* Card 1 — Red */
+.pv--red{ background:linear-gradient(145deg,#fff0ee,#ffddd8); }
+.pv--red::before{ width:110px;height:110px;background:#e84545;opacity:.12;top:-28px;right:-20px; }
+.pv--red::after{  width:60px; height:60px; background:#e84545;opacity:.10;bottom:-16px;left:24px; }
+.pv--red .card-num{ color:#e84545; }
+
+/* Card 2 — Blue */
+.pv--blue{ background:linear-gradient(145deg,#eef3ff,#d8e5ff); }
+.pv--blue::before{ width:130px;height:130px;background:#2f6ff0;opacity:.10;bottom:-36px;left:-24px; }
+.pv--blue::after{  width:50px; height:50px; background:#2f6ff0;opacity:.12;top:14px;right:20px; }
+.pv--blue .card-num{ color:#2f6ff0; }
+
+/* Card 3 — Yellow */
+.pv--yellow{ background:linear-gradient(145deg,#fffbea,#fff0b0); }
+.pv--yellow::before{ width:100px;height:100px;background:#d4900a;opacity:.12;top:-24px;left:50%;transform:translateX(-50%); }
+.pv--yellow::after{  width:55px; height:55px; background:#d4900a;opacity:.10;bottom:-10px;right:18px; }
+.pv--yellow .card-num{ color:#c17f0a; }
+
 .card-num{
-  font-size:72px;
-  font-weight:700;
-  color:var(--text);
-  opacity:.08;
+  font-family:'Fredoka One', cursive;
+  font-size:80px;
   line-height:1;
-  letter-spacing:-.04em;
+  position:relative;
+  z-index:1;
   user-select:none;
 }
 
