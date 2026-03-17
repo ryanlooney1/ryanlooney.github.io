@@ -62,7 +62,6 @@ nav a:hover{text-decoration:underline;}
 .hero-bio{
   font-size:16px;
   color:var(--muted);
-  max-width:72ch;
   margin:0 0 20px;
 }
 
