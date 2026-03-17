@@ -198,6 +198,34 @@ img {
   }
 }
 
+/* ── Before / After screenshots ── */
+.before-after{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.before-after-item{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.before-after-label{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted2);
+}
+.before-after-item img{
+  width:100%;
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(15,23,42,.07);
+}
+@media(max-width:700px){
+  .before-after{ grid-template-columns:1fr; }
+}
+
 /* ── CTA preview visual ── */
 .cta-preview{
   background:linear-gradient(135deg,#f0f4f8 0%,#e8edf5 100%);
