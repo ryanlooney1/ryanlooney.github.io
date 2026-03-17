@@ -256,67 +256,30 @@ img {
 
 /* ── Instagram label mock ── */
 .ig-label-mock{
-  background:#fff;
-  border:1px solid #efefef;
-  padding:0;
+  background:linear-gradient(135deg,#f3f7fb 0%,#f8f4ef 100%);
 }
-.ig-mock-inner{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:6px;
-  padding:18px 20px;
-  height:100%;
-}
-.ig-row{
+.label-transition{
   display:flex;
   align-items:center;
-  gap:10px;
-  background:#fafafa;
-  border:1px solid #efefef;
-  border-radius:10px;
-  padding:10px 12px;
+  gap:16px;
 }
-.ig-avatar{
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-  flex-shrink:0;
-}
-.ig-meta{
-  display:flex;
-  flex-direction:column;
-  gap:1px;
-  flex:1;
-}
-.ig-username{
-  font-size:12px;
-  font-weight:600;
-  color:#262626;
-  letter-spacing:-.01em;
-}
-.ig-sponsored{
-  font-size:11px;
-  color:#8e8e8e;
-}
-.ig-ad{
-  font-size:11px;
-  color:#8e8e8e;
+.label-before{
+  font-size:22px;
   font-weight:500;
+  color:#94a3b8;
+  letter-spacing:-.02em;
+  text-decoration:line-through;
+  text-decoration-color:#cbd5e1;
 }
-.ig-dots{
-  font-size:14px;
-  color:#262626;
-  letter-spacing:.05em;
-  flex-shrink:0;
+.label-arrow{
+  font-size:18px;
+  color:var(--muted2);
 }
-.ig-mock-arrow{
-  text-align:center;
-  font-size:14px;
-  color:var(--accent);
-  font-weight:600;
-  line-height:1;
+.label-after{
+  font-size:22px;
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:-.02em;
 }
 
 /* ── CTA preview visual ── */
