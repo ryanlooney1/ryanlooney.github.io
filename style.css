@@ -254,6 +254,71 @@ img {
   font-weight:700;
 }
 
+/* ── Instagram label mock ── */
+.ig-label-mock{
+  background:#fff;
+  border:1px solid #efefef;
+  padding:0;
+}
+.ig-mock-inner{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  padding:18px 20px;
+  height:100%;
+}
+.ig-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fafafa;
+  border:1px solid #efefef;
+  border-radius:10px;
+  padding:10px 12px;
+}
+.ig-avatar{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+  flex-shrink:0;
+}
+.ig-meta{
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+  flex:1;
+}
+.ig-username{
+  font-size:12px;
+  font-weight:600;
+  color:#262626;
+  letter-spacing:-.01em;
+}
+.ig-sponsored{
+  font-size:11px;
+  color:#8e8e8e;
+}
+.ig-ad{
+  font-size:11px;
+  color:#8e8e8e;
+  font-weight:500;
+}
+.ig-dots{
+  font-size:14px;
+  color:#262626;
+  letter-spacing:.05em;
+  flex-shrink:0;
+}
+.ig-mock-arrow{
+  text-align:center;
+  font-size:14px;
+  color:var(--accent);
+  font-weight:600;
+  line-height:1;
+}
+
 /* ── CTA preview visual ── */
 .cta-preview{
   background:linear-gradient(135deg,#f0f4f8 0%,#e8edf5 100%);
