@@ -22,11 +22,12 @@ nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;}
 nav a{color:var(--accent);text-decoration:none;border-bottom:none;}
 nav a:hover{text-decoration:underline;}
 
-.hero{display:flex;align-items:flex-start;gap:48px;padding:40px 0;}
+.hero{display:flex;align-items:center;gap:48px;padding:40px 0;}
 .hero-copy{flex:1;min-width:280px;}
 .hero-photo{
-  width:220px;
-  height:220px;
+  width:280px;
+  height:280px;
+  flex-shrink:0;
   border-radius:26px;
   border:1px solid rgba(125,133,139,.25);
   object-fit:cover;
