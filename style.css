@@ -573,6 +573,16 @@ img{
   .ai-flow-arrow{ transform:rotate(90deg); align-self:center; padding-top:0; }
 }
 
+/* ── Case study meta line ── */
+.case-meta{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#94a3b8;
+  margin:12px 0 0;
+}
+
 /* ── Pull quote ── */
 .pullquote{
   margin:0;
