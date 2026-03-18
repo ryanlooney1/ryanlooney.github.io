@@ -643,6 +643,63 @@ img{
   white-space:nowrap;
 }
 
+/* ── Before / After flex (ad label page) ── */
+.ba-flex{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:32px;
+  flex-wrap:wrap;
+}
+.ba-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
+.ba-label-tag{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.ba-card img{
+  width:200px;
+  border-radius:28px;
+  display:block;
+  box-shadow:0 0 0 8px #1e293b, 0 20px 48px rgba(15,23,42,.25);
+}
+.ba-badge{
+  font-size:14px;
+  font-weight:700;
+  padding:6px 18px;
+  border-radius:20px;
+  letter-spacing:.01em;
+}
+.ba-badge--before{
+  background:#fee2e2;
+  color:#b91c1c;
+  text-decoration:line-through;
+  text-decoration-color:#b91c1c;
+}
+.ba-badge--after{
+  background:#dcfce7;
+  color:#15803d;
+}
+.ba-arrow{
+  font-size:32px;
+  color:var(--accent);
+  font-weight:700;
+  flex-shrink:0;
+  margin-top:-28px;
+}
+@media(max-width:560px){
+  .ba-flex{ gap:24px; }
+  .ba-card img{ width:160px; }
+  .ba-arrow{ margin-top:0; font-size:24px; }
+}
+
 /* ── Checklist ── */
 .checklist{
   list-style:none;
