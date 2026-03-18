@@ -639,10 +639,22 @@ img{
 /* ── Pull quote ── */
 .pullquote{
   margin:0;
-  padding:28px 32px;
+  padding:28px 32px 28px 40px;
   background:rgba(107,142,139,.08);
   border-left:4px solid var(--accent);
   border-radius:16px;
+  position:relative;
+}
+.pullquote::before{
+  content:'\201C';
+  font-family:'Fraunces',serif;
+  font-size:72px;
+  color:var(--accent);
+  opacity:.5;
+  line-height:1;
+  position:absolute;
+  top:12px;
+  left:16px;
 }
 .pullquote blockquote{
   margin:0 0 14px;
@@ -704,6 +716,89 @@ img{
   color:var(--accent);
   font-weight:600;
   white-space:nowrap;
+}
+
+/* ── Annotated screenshot callout ── */
+.ba-img-wrap{
+  position:relative;
+}
+.ba-callout{
+  position:absolute;
+  bottom:72px;
+  left:12px;
+  background:rgba(255,255,255,.95);
+  border:2px solid var(--accent);
+  border-radius:8px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.04em;
+  padding:3px 8px;
+  color:var(--text);
+  pointer-events:none;
+}
+.ba-callout::after{
+  content:'';
+  position:absolute;
+  bottom:-7px;
+  left:10px;
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:7px solid var(--accent);
+}
+
+/* ── Challenge two-col + mini timeline ── */
+.challenge-grid{
+  display:grid;
+  grid-template-columns:1fr 180px;
+  gap:40px;
+  align-items:start;
+}
+.challenge-timeline{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:4px;
+}
+.ct-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.ct-year{
+  font-family:'Fraunces',serif;
+  font-size:22px;
+  font-weight:900;
+  color:var(--accent);
+  line-height:1;
+}
+.ct-label{
+  font-size:11px;
+  font-weight:600;
+  color:var(--muted);
+  letter-spacing:.03em;
+  margin-top:3px;
+  text-transform:uppercase;
+}
+.ct-line{
+  width:2px;
+  height:36px;
+  background:var(--line);
+  margin:8px 0;
+}
+.ct-item--end .ct-year{
+  color:var(--text);
+}
+@media(max-width:640px){
+  .challenge-grid{ grid-template-columns:1fr; }
+  .challenge-timeline{ flex-direction:row; gap:8px; flex-wrap:wrap; justify-content:center; }
+  .ct-line{ width:24px; height:2px; margin:0; align-self:center; }
+}
+
+/* ── Constraint card variant ── */
+.card--constraint{
+  border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;
 }
 
 /* ── Before / After flex (ad label page) ── */
