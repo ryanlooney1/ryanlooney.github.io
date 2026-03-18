@@ -573,6 +573,59 @@ img{
   .ai-flow-arrow{ transform:rotate(90deg); align-self:center; padding-top:0; }
 }
 
+/* ── Case study hero stats ── */
+.cs-stats{
+  display:flex;
+  gap:40px;
+  margin-top:36px;
+  flex-wrap:wrap;
+}
+.cs-stat{
+  display:flex;
+  flex-direction:column;
+}
+.cs-stat-num{
+  font-family:'Fraunces',serif;
+  font-size:52px;
+  font-weight:900;
+  color:#f8fafc;
+  line-height:1;
+}
+.cs-stat-label{
+  font-size:12px;
+  font-weight:500;
+  color:#94a3b8;
+  letter-spacing:.03em;
+  margin-top:6px;
+  max-width:120px;
+}
+
+/* ── Impact grid ── */
+.impact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+.impact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:28px 24px;
+}
+.impact-card-num{
+  font-family:'Fraunces',serif;
+  font-size:40px;
+  font-weight:900;
+  color:var(--accent);
+  line-height:1;
+  margin-bottom:12px;
+}
+.impact-card-label{
+  font-size:15px;
+  color:var(--text);
+  line-height:1.5;
+}
+
 /* ── Case study meta line ── */
 .case-meta{
   font-size:12px;
