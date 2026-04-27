@@ -4,122 +4,161 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case study: AI content strategy at Meta | Ryan Looney</title>
-<meta name="description" content="How Ryan Looney embedded content design into Meta's AI systems — rewriting system prompts for LLM-powered ad CTAs, achieving 3%+ CTR lift, and building the playbook for CDs across the org.">
+<meta name="description" content="How Ryan Looney embedded content design into Meta's AI systems: rewriting system prompts for LLM-powered ad CTAs, achieving 3%+ CTR lift, and building the playbook now used by content designers across Meta's AI work.">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-
 <header>
-  <p class="case-nav"><a href="index.html">&larr; Home</a><a href="case-study-ad-label.html">Next &rarr;</a></p>
-  <h1>System prompts are content design</h1>
-  <h3>When Instagram started building LLM-powered ad CTAs, I embedded myself in the work, rewrote the system prompts from scratch, and drove 3%+ CTR lifts at scale. Then I turned everything I learned into a framework and playbook for content designers working in AI.</h3>
-  <p class="case-meta">Staff Content Designer &nbsp;·&nbsp; Instagram Business</p>
+<p class="case-nav"><a href="index.html">&larr; Home</a><a href="case-study-ad-label.html">Next &rarr;</a></p>
+<h1>System prompts are content design</h1>
+<h3>When Instagram started building LLM-powered ad CTAs, I embedded myself in the work, rewrote the system prompts from scratch, and drove 3%+ CTR lifts at scale. Then I built the framework and playbook now used by content designers across Meta's AI work.</h3>
+<p class="case-meta">Staff Content Designer &nbsp;·&nbsp; Instagram Business</p>
 </header>
 
-
 <section class="section">
-  <div class="section-title">Approach</div>
-  <div class="ai-flow">
-    <div class="ai-flow-step ai-flow-step--green">
-      <div class="ai-flow-num">Step 01</div>
-      <div class="ai-flow-label">Align &amp; Access</div>
-      <p class="ai-flow-desc">Got leadership buy-in to embed CD into the system prompt workflow, met with key POCs, and learned system prompting from Content Engineers across Meta.</p>
-    </div>
-    <div class="ai-flow-arrow">→</div>
-    <div class="ai-flow-step ai-flow-step--amber">
-      <div class="ai-flow-num">Step 02</div>
-      <div class="ai-flow-label">Audit &amp; Rewrite</div>
-      <p class="ai-flow-desc">Identified patterns and gaps in the existing prompt. Rewrote it section by section, bringing CD expertise: the ingredients of an effective CTA, what to prioritize, and what to avoid.</p>
-    </div>
-    <div class="ai-flow-arrow">→</div>
-    <div class="ai-flow-step ai-flow-step--violet">
-      <div class="ai-flow-num">Step 03</div>
-      <div class="ai-flow-label">Test &amp; Iterate</div>
-      <p class="ai-flow-desc">Partnered with Eng to test improvements in a sandbox. Developed quality evaluation criteria with PM, ran quality parties, and iterated until results were consistently stronger than baseline CTAs.</p>
-    </div>
-    <div class="ai-flow-arrow">→</div>
-    <div class="ai-flow-step ai-flow-step--blue">
-      <div class="ai-flow-num">Step 04</div>
-      <div class="ai-flow-label">Ship &amp; Measure</div>
-      <p class="ai-flow-desc">Aligned on public test, kicked off, and measured results: 3%+ CTR on LLM-powered CTAs, with new rounds of testing ongoing.</p>
-    </div>
-  </div>
+<div class="section-title">Challenge</div>
+<p>
+Instagram was building LLM-powered ad CTAs, but content design wasn't in the room where the prompts were written. Engineering owned the system prompts, and the outputs varied widely in quality. Without content design expertise inside the prompt itself, no amount of polish on the UI layer could fix what the model was producing.
+</p>
+<p>
+The deeper problem was that nobody had a model for what content design looked like inside an LLM. The discipline had a clear role on screens. It had no defined role inside the prompt. If we were going to ship LLM-generated content at Meta's scale, that gap had to close fast.
+</p>
 </section>
 
 <section class="section">
-  <div class="pullquote">
-    <blockquote>"Ryan has emerged as a pioneering force in GenAI content design at Instagram. He transformed craft expertise into scalable system prompts that delivered measurable business impact (3%+ CTR on ad CTAs) while proactively building frameworks, teaching others, and advocating for content design's strategic value in the GenAI landscape."</blockquote>
-    <cite>AI Lead, Instagram</cite>
-  </div>
+<div class="section-title">Constraints</div>
+<div class="card-grid">
+<div class="card card--constraint card--rose">
+<strong>Discipline boundary</strong>
+<p>System prompt work lived inside engineering. Content design had to earn its way into the workflow, not be invited.</p>
+</div>
+<div class="card card--constraint card--amber">
+<strong>No precedent</strong>
+<p>No playbook existed for content design inside LLMs at Meta. The methodology had to be built while the work was happening.</p>
+</div>
+<div class="card card--constraint card--violet">
+<strong>Evaluation</strong>
+<p>There was no agreed-upon way to judge whether an LLM-generated CTA was good. Without a quality bar, we couldn't tell if changes were working.</p>
+</div>
+<div class="card card--constraint card--blue">
+<strong>Scale</strong>
+<p>Outputs would appear on billions of ad impressions. The quality threshold for shipping had to match Meta's scale, not a sandbox.</p>
+</div>
+<div class="card card--constraint card--teal">
+<strong>Skill gap</strong>
+<p>For the methodology to scale beyond me, other content designers had to learn prompting fast enough to lead their own AI projects.</p>
+</div>
+</div>
 </section>
 
 <section class="section">
-  <div class="section-title">Areas of expertise</div>
-  <div class="ai-pillars">
-
-    <div class="ai-pillar ai-pillar--teal">
-      <div class="ai-pillar-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-      </div>
-      <div class="ai-pillar-label">System prompting</div>
-      <p class="ai-pillar-desc">Writing and refining LLM instructions that shape outputs at scale, bringing content expertise into the machine.</p>
-    </div>
-
-    <div class="ai-pillar ai-pillar--blue">
-      <div class="ai-pillar-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-      </div>
-      <div class="ai-pillar-label">Evaluation</div>
-      <p class="ai-pillar-desc">Developing rigorous, reusable quality rubrics and structured assessments to judge AI output against pre-defined criteria.</p>
-    </div>
-
-    <div class="ai-pillar ai-pillar--violet">
-      <div class="ai-pillar-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      </div>
-      <div class="ai-pillar-label">Validation</div>
-      <p class="ai-pillar-desc">Testing prompt iterations in sandbox environments and confirming outputs meet the bar before public experimentation.</p>
-    </div>
-
-    <div class="ai-pillar ai-pillar--amber">
-      <div class="ai-pillar-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-      </div>
-      <div class="ai-pillar-label">Frameworks &amp; playbooks</div>
-      <p class="ai-pillar-desc">Translating project-level wins into replicable processes, scaling individual impact to discipline-wide capabilities.</p>
-    </div>
-
-    <div class="ai-pillar ai-pillar--rose">
-      <div class="ai-pillar-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-      </div>
-      <div class="ai-pillar-label">Mentoring</div>
-      <p class="ai-pillar-desc">Teaching and guiding CDs to lead system prompt work through hands-on coaching sessions and weekly office hours.</p>
-    </div>
-
-  </div>
+<div class="section-title">Approach</div>
+<div class="ai-flow">
+<div class="ai-flow-step ai-flow-step--green">
+<div class="ai-flow-num">Step 01</div>
+<div class="ai-flow-label">Align &amp; Access</div>
+<p class="ai-flow-desc">Got leadership buy-in to embed CD into the system prompt workflow, met with key POCs, and learned system prompting from Content Engineers across Meta.</p>
+</div>
+<div class="ai-flow-arrow">→</div>
+<div class="ai-flow-step ai-flow-step--amber">
+<div class="ai-flow-num">Step 02</div>
+<div class="ai-flow-label">Audit &amp; Rewrite</div>
+<p class="ai-flow-desc">Identified patterns and gaps in the existing prompt. Rewrote it section by section, bringing CD expertise: the ingredients of an effective CTA, what to prioritize, and what to avoid.</p>
+</div>
+<div class="ai-flow-arrow">→</div>
+<div class="ai-flow-step ai-flow-step--violet">
+<div class="ai-flow-num">Step 03</div>
+<div class="ai-flow-label">Test &amp; Iterate</div>
+<p class="ai-flow-desc">Partnered with Eng to test improvements in a sandbox. Developed quality evaluation criteria with PM, ran quality parties, and iterated until results were consistently stronger than baseline CTAs.</p>
+</div>
+<div class="ai-flow-arrow">→</div>
+<div class="ai-flow-step ai-flow-step--blue">
+<div class="ai-flow-num">Step 04</div>
+<div class="ai-flow-label">Ship, Measure &amp; Scale</div>
+<p class="ai-flow-desc">Aligned on public test, kicked off, measured 3%+ CTR lift, then turned the methodology into Meta's first system prompt playbook for content designers.</p>
+</div>
+</div>
 </section>
 
+<section class="section">
+<div class="pullquote">
+<blockquote>"Ryan has emerged as a pioneering force in GenAI content design at Instagram. He transformed craft expertise into scalable system prompts that delivered measurable business impact (3%+ CTR on ad CTAs) while proactively building frameworks, teaching others, and advocating for content design's strategic value in the GenAI landscape."</blockquote>
+<cite>AI Lead, Instagram</cite>
+</div>
+</section>
 
 <section class="section">
-  <div class="expertise-callout">
-    <div class="key-insight-header">
-      <div class="key-insight-icon">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21h6"></path><path d="M12 3a6 6 0 0 1 6 6c0 2.2-1.2 4.2-3 5.4V17a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-2.6C7.2 13.2 6 11.2 6 9a6 6 0 0 1 6-6z"></path></svg>
-      </div>
-      <h3>Key insight</h3>
-    </div>
-    <p>Whatever we end up being called, content design expertise is needed to generate high-quality outputs from LLMs.</p>
-  </div>
+<div class="section-title">Impact</div>
+<ul class="checklist">
+<li>Drove 3%+ CTR lift on LLM-powered ad CTAs at Meta scale</li>
+<li>Built Meta's first system prompt playbook for content designers</li>
+<li>Established evaluation criteria adopted across AI product teams</li>
+<li>Mentored content designers into prompt work through coaching and weekly office hours, multiplying discipline-wide capability</li>
+</ul>
+</section>
+
+<section class="section">
+<div class="section-title">Areas of expertise</div>
+<div class="ai-pillars">
+<div class="ai-pillar ai-pillar--teal">
+<div class="ai-pillar-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+</div>
+<div class="ai-pillar-label">System prompting</div>
+<p class="ai-pillar-desc">Writing and refining LLM instructions that shape outputs at scale, bringing content expertise into the machine.</p>
+</div>
+<div class="ai-pillar ai-pillar--blue">
+<div class="ai-pillar-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+</div>
+<div class="ai-pillar-label">Evaluation</div>
+<p class="ai-pillar-desc">Developing rigorous, reusable quality rubrics and structured assessments to judge AI output against pre-defined criteria.</p>
+</div>
+<div class="ai-pillar ai-pillar--violet">
+<div class="ai-pillar-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+</div>
+<div class="ai-pillar-label">Validation</div>
+<p class="ai-pillar-desc">Testing prompt iterations in sandbox environments and confirming outputs meet the bar before public experimentation.</p>
+</div>
+<div class="ai-pillar ai-pillar--amber">
+<div class="ai-pillar-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+</div>
+<div class="ai-pillar-label">Frameworks &amp; playbooks</div>
+<p class="ai-pillar-desc">Translating project-level wins into replicable processes, scaling individual impact to discipline-wide capabilities.</p>
+</div>
+<div class="ai-pillar ai-pillar--rose">
+<div class="ai-pillar-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+</div>
+<div class="ai-pillar-label">Mentoring</div>
+<p class="ai-pillar-desc">Teaching and guiding CDs to lead system prompt work through hands-on coaching sessions and weekly office hours.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="expertise-callout">
+<div class="key-insight-header">
+<div class="key-insight-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21h6"></path><path d="M12 3a6 6 0 0 1 6 6c0 2.2-1.2 4.2-3 5.4V17a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-2.6C7.2 13.2 6 11.2 6 9a6 6 0 0 1 6-6z"></path></svg>
+</div>
+<h3>Key insight</h3>
+</div>
+<p>Whatever we end up being called, content design expertise is needed to generate high-quality outputs from LLMs.</p>
+<p class="what-id-do"><strong>What I'd do differently:</strong> Next time, I'll start documenting the methodology while doing the work, not after. Earlier playbooks would have accelerated adoption across other AI teams.</p>
+</div>
 </section>
 
 <section class="section" id="contact">
-  <div class="section-title">Get in touch</div>
-  <p>I'm always open to new connections and conversations.</p>
-  <p><a href="https://www.linkedin.com/in/ryanjlooney/">Find me on LinkedIn</a></p>
+<div class="section-title">Get in touch</div>
+<p>I'm always open to new connections and conversations.</p>
+<p><a href="mailto:ryanlooney1@gmail.com">ryanlooney1@gmail.com</a></p>
+<p><a href="https://www.linkedin.com/in/ryanjlooney/">Find me on LinkedIn</a></p>
 </section>
 
 </div>
