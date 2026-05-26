@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case study: AI content strategy at Meta | Ryan Looney</title>
-<meta name="description" content="How Ryan Looney embedded content design into Meta's AI systems: rewriting system prompts for LLM-powered ad CTAs, achieving 3%+ CTR lift, and building the playbook now used by content designers across Meta's AI work.">
+<meta name="description" content="How Ryan Looney embedded content design into Meta's AI systems: rewriting system prompts for LLM-powered ad CTAs, driving a 75% jump in high-quality outputs, and building the playbook now used by content designers across Meta.">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
@@ -14,90 +14,104 @@
 <header>
 <p class="case-nav"><a href="index.html">&larr; Home</a><a href="case-study-ad-label.html">Next &rarr;</a></p>
 <h1>System prompts are content design</h1>
-<h3>When Instagram started building LLM-powered ad CTAs, I embedded myself in the work, rewrote the system prompts from scratch, and drove 3%+ CTR lifts at scale. Then I built the framework and playbook now used by content designers across Meta's AI work.</h3>
-<p class="case-meta">Instagram Business &nbsp;·&nbsp; 2026</p>
+<h3>Engineers at Instagram were building AI-generated ad CTAs without content design in the room. I identified the opportunity, rewrote the system prompt, and drove a 75% jump in high-quality outputs. Then I made prompt writing a formal CD deliverable across Instagram.</h3>
+<p class="case-meta">Instagram Business &nbsp;·&nbsp; 2025–2026</p>
+<div class="hero-stats-row">
+<div class="hero-stat">
+<div class="hero-stat-num">+75%</div>
+<div class="hero-stat-label">jump in outputs rated high-quality</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">64%</div>
+<div class="hero-stat-label">win rate over &ldquo;Shop now,&rdquo; Meta&rsquo;s top-performing CTA</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">3%</div>
+<div class="hero-stat-label">CTR jump over basic CTAs</div>
+</div>
+</div>
 </header>
+
+<section class="section">
+<figure class="cta-screens">
+<img src="AI-CTA-Screens.png" alt="Three Instagram Stories ads showing a basic CTA, an AI-powered CTA v1, and an AI-powered CTA v2">
+<figcaption class="cta-screens-labels">
+<div class="cta-screens-item">
+<span class="cta-screens-num">01</span>
+<span class="cta-screens-label">Basic CTA</span>
+</div>
+<div class="cta-screens-item">
+<span class="cta-screens-num">02</span>
+<span class="cta-screens-label">Initial prompt output</span>
+</div>
+<div class="cta-screens-item">
+<span class="cta-screens-num">03</span>
+<span class="cta-screens-label">Improved prompt output</span>
+</div>
+</figcaption>
+</figure>
+</section>
 
 <section class="section">
 <div class="section-title">Challenge</div>
 <p>
-Instagram was building LLM-powered ad CTAs, but content design wasn't in the room where the prompts were written. Engineering owned the system prompts, and the outputs varied widely in quality. Without content design expertise inside the prompt itself, no amount of polish on the UI layer could fix what the model was producing.
+After testing more than 1,000 CTA variants on Instagram Stories ads, I learned that an AI team was testing CTAs that reflected the ad itself.
 </p>
 <p>
-The deeper problem was that nobody had a model for what content design looked like inside an LLM. The discipline had a clear role on screens. It had no defined role inside the prompt. If we were going to ship LLM-generated content at Meta's scale, that gap had to close fast.
+The original system prompt was full of vague instructions asking the model to generate the best possible CTA from the advertiser's style. If a human content designer couldn't parse these instructions, the model couldn't either.
+</p>
+<p>
+In early 2025, nobody had a model from what content design looked like inside of an LLM. I had to pitch my involvement and earn the team's trust to produce a better system prompt.
 </p>
 </section>
 
 <section class="section">
-<div class="section-title">Constraints</div>
-<div class="card-grid">
-<div class="card card--constraint card--rose">
-<strong>Discipline boundary</strong>
-<p>System prompt work lived inside engineering. Content design had to earn its way into the workflow, not be invited.</p>
-</div>
-<div class="card card--constraint card--amber">
-<strong>No precedent</strong>
-<p>No playbook existed for content design inside LLMs at Meta. The methodology had to be built while the work was happening.</p>
-</div>
-<div class="card card--constraint card--violet">
-<strong>Evaluation</strong>
-<p>There was no agreed-upon way to judge whether an LLM-generated CTA was good. Without a quality bar, we couldn't tell if changes were working.</p>
-</div>
-<div class="card card--constraint card--blue">
-<strong>Scale</strong>
-<p>Outputs would appear on billions of ad impressions. The quality threshold for shipping had to match Meta's scale, not a sandbox.</p>
-</div>
-<div class="card card--constraint card--teal">
-<strong>Skill gap</strong>
-<p>For the methodology to scale beyond me, other content designers had to learn prompting fast enough to lead their own AI projects.</p>
-</div>
-</div>
+<div class="section-title">The opportunity</div>
+<p>
+I recognized the opportunity for increased prompt quality to drive better outcomes. To get there, I fully rewrote the system prompt. I removed vague guidance and replaced it with hard-won expertise on tone, clarity, and conversational language.
+</p>
+<p>
+I added explicit constraints and specific examples of good and bad CTAs. Then I tested the new prompt language on real-world ads in a dedicated playground until the CTAs were consistently strong.
+</p>
 </section>
 
 <section class="section">
-<div class="section-title">Approach</div>
-<div class="ai-flow">
-<div class="ai-flow-step ai-flow-step--green">
-<div class="ai-flow-num">Step 01</div>
-<div class="ai-flow-label">Align &amp; Access</div>
-<p class="ai-flow-desc">Got leadership buy-in to embed CD into the system prompt workflow, met with key POCs, and learned system prompting from Content Engineers across Meta.</p>
+<div class="section-title">Building evaluation criteria</div>
+<p>The team had no shared definition of good or bad AI-generated CTAs. I designed a 3-tier scoring rubric in tandem with our product manager and engineering lead, which the cross-functional team could use to more objectively grade the model's outputs.</p>
+<div class="rubric">
+<div class="rubric-tier rubric-tier--high">
+<div class="rubric-tier-label">High-quality CTAs</div>
+<ul>
+<li>Conversational tone</li>
+<li>Natural language (you/your)</li>
+<li>Actionable and predictable</li>
+</ul>
 </div>
-<div class="ai-flow-arrow">→</div>
-<div class="ai-flow-step ai-flow-step--amber">
-<div class="ai-flow-num">Step 02</div>
-<div class="ai-flow-label">Audit &amp; Rewrite</div>
-<p class="ai-flow-desc">Identified patterns and gaps in the existing prompt. Rewrote it section by section, bringing CD expertise: the ingredients of an effective CTA, what to prioritize, and what to avoid.</p>
+<div class="rubric-tier rubric-tier--med">
+<div class="rubric-tier-label">Medium-quality CTAs</div>
+<ul>
+<li>Functional</li>
+<li>Grammatically correct (no errors)</li>
+<li>Typically generic or vague</li>
+</ul>
 </div>
-<div class="ai-flow-arrow">→</div>
-<div class="ai-flow-step ai-flow-step--violet">
-<div class="ai-flow-num">Step 03</div>
-<div class="ai-flow-label">Test &amp; Iterate</div>
-<p class="ai-flow-desc">Partnered with Eng to test improvements in a sandbox. Developed quality evaluation criteria with PM, ran quality parties, and iterated until results were consistently stronger than baseline CTAs.</p>
-</div>
-<div class="ai-flow-arrow">→</div>
-<div class="ai-flow-step ai-flow-step--blue">
-<div class="ai-flow-num">Step 04</div>
-<div class="ai-flow-label">Ship, Measure &amp; Scale</div>
-<p class="ai-flow-desc">Aligned on public test, kicked off, measured 3%+ CTR lift, then turned the methodology into Meta's first system prompt playbook for content designers.</p>
+<div class="rubric-tier rubric-tier--low">
+<div class="rubric-tier-label">Low-quality CTAs</div>
+<ul>
+<li>Hallucinations or typos</li>
+<li>Mismatched to the ad objective (for example &ldquo;Shop&rdquo; on a messaging ad)</li>
+<li>Tone violations (overly pushy or off-brand)</li>
+</ul>
 </div>
 </div>
+<p class="rubric-footer">I operationalized the rubric with data parties, with teammates rating ~100 outputs each round. Our findings drove the next prompt iteration, helping our win rate increase from <strong>41% to 58%</strong> overall across versions.</p>
 </section>
 
 <section class="section">
 <div class="pullquote">
-<blockquote>"Ryan has emerged as a pioneering force in GenAI content design at Instagram. He transformed craft expertise into scalable system prompts that delivered measurable business impact (3%+ CTR on ad CTAs) while proactively building frameworks, teaching others, and advocating for content design's strategic value in the GenAI landscape."</blockquote>
-<cite>AI Lead, Instagram</cite>
+<blockquote>"Ryan and I worked toward a shared goal: integrating content design expertise into system prompts to drive measurable business impact. He has a rare ability to make complex, emerging technology feel approachable and actionable for the people around him."</blockquote>
+<cite>Karen Kelley, Senior Content Designer, Instagram</cite>
 </div>
-</section>
-
-<section class="section">
-<div class="section-title">Impact</div>
-<ul class="checklist">
-<li>Drove 3%+ CTR lift on LLM-powered ad CTAs at Meta scale</li>
-<li>Built Meta's first system prompt playbook for content designers</li>
-<li>Established evaluation criteria adopted across AI product teams</li>
-<li>Mentored content designers into prompt work through coaching and weekly office hours, multiplying discipline-wide capability</li>
-</ul>
 </section>
 
 <section class="section">
@@ -129,7 +143,7 @@ The deeper problem was that nobody had a model for what content design looked li
 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
 </div>
 <div class="ai-pillar-label">Frameworks &amp; playbooks</div>
-<p class="ai-pillar-desc">Translating project-level wins into replicable processes, scaling individual impact to discipline-wide capabilities.</p>
+<p class="ai-pillar-desc">Translating project-level wins into replicable processes, scaling individual impact to discipline-wide capability.</p>
 </div>
 <div class="ai-pillar ai-pillar--rose">
 <div class="ai-pillar-icon">
@@ -149,8 +163,7 @@ The deeper problem was that nobody had a model for what content design looked li
 </div>
 <h3>Key insight</h3>
 </div>
-<p>Whatever we end up being called, content design expertise is needed to generate high-quality outputs from LLMs.</p>
-<p class="what-id-do"><strong>What I'd do differently:</strong> Next time, I'll start documenting the methodology while doing the work, not after. Earlier playbooks would have accelerated adoption across other AI teams.</p>
+<p>Content designers are uniquely positioned to own and author AI system prompts. Especially when the AI output is a type of content CDs own and understand best.</p>
 </div>
 </section>
 
