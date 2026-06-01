@@ -698,60 +698,10 @@ img{
 }
 
 
-/* ── Challenge two-col + mini timeline ── */
-.challenge-grid{
-  display:grid;
-  grid-template-columns:1fr 180px;
-  gap:40px;
-  align-items:start;
-}
-.challenge-timeline{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding-top:4px;
-}
-.ct-item{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
-.ct-year{
-  font-family:'Fraunces',serif;
-  font-size:22px;
-  font-weight:900;
-  color:var(--accent);
-  line-height:1;
-}
-
-.ct-line{
-  width:2px;
-  height:36px;
-  background:var(--line);
-  margin:8px 0;
-}
-.ct-item--end .ct-year{
-  color:var(--text);
-}
-@media(max-width:640px){
-  .challenge-grid{ grid-template-columns:1fr; }
-  .challenge-timeline{ flex-direction:row; gap:8px; flex-wrap:wrap; justify-content:center; }
-  .ct-line{ width:24px; height:2px; margin:0; align-self:center; }
-}
-
-/* ── Constraint card variant ── */
-.card--constraint{
-  border-left:3px solid var(--accent);
-  border-radius:0 12px 12px 0;
-}
-
 /* ── Card color variants ── */
-.card--teal{ background:linear-gradient(145deg,#f0f7f6,#e6f2f1); border-color:rgba(107,142,139,.25); }
 .card--blue{ background:linear-gradient(145deg,#f0f5ff,#e8effe); border-color:rgba(90,122,170,.2); }
 .card--violet{ background:linear-gradient(145deg,#f5f0ff,#ede8fd); border-color:rgba(139,122,184,.2); }
 .card--amber{ background:linear-gradient(145deg,#fdf8ef,#faf2e2); border-color:rgba(160,128,64,.2); }
-.card--rose{ background:linear-gradient(145deg,#fff0f3,#fde8ec); border-color:rgba(176,96,112,.2); }
 .card--green{ background:linear-gradient(145deg,#f0f7f2,#e4f2e8); border-color:rgba(78,138,98,.2); }
 
 /* ── Before / After flex (ad label page) ── */
