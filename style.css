@@ -1194,7 +1194,9 @@ img{
 
 /* Boxed before/after media inside a case study header */
 .hero-media-box{
-  margin:28px 0 0;
+  width:fit-content;
+  max-width:100%;
+  margin:28px auto 0;
   padding:22px 20px 18px;
   border:1px solid rgba(148,163,184,.3);
   border-radius:18px;
