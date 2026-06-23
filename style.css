@@ -1182,7 +1182,8 @@ img{
   margin:0;
 }
 .cta-screens--boxed{
-  margin:28px 0 0;
+  max-width:540px;
+  margin:28px auto 0;
   padding:20px 20px 16px;
   border:1px solid rgba(148,163,184,.3);
   border-radius:18px;
