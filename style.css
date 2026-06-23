@@ -303,7 +303,7 @@ img{
 }
 .case-thumb--ai{ background:linear-gradient(135deg,#f4e6d8,#e9d2bf); }
 .case-thumb--adlabel{ background:linear-gradient(135deg,#eef1fb,#e0e7f6); }
-.case-thumb--cta{ background:linear-gradient(135deg,#eef1fb,#e0e7f6); }
+.case-thumb--cta{ background:linear-gradient(135deg,#f0f7f2,#e0efe6); }
 
 /* CTA chips */
 .ui-chip{
@@ -574,22 +574,22 @@ img{
   display:inline-flex;
   align-items:center;
   gap:9px;
-  background:var(--accent);
+  background:#1e293b;
   color:#fff;
   font-weight:600;
   font-size:15px;
   padding:13px 24px;
   border-radius:12px;
   border-bottom:none;
-  box-shadow:0 4px 14px rgba(107,142,139,.30);
+  box-shadow:0 4px 14px rgba(15,23,42,.20);
   transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
 }
 .btn-resume:hover{
-  background:#5c7d7a;
+  background:#0f172a;
   color:#fff;
   border-bottom:none;
   transform:translateY(-2px);
-  box-shadow:0 8px 22px rgba(107,142,139,.38);
+  box-shadow:0 8px 22px rgba(15,23,42,.28);
 }
 .btn-resume svg{
   width:18px;
