@@ -174,7 +174,8 @@ h3{margin:12px 0 24px;font-weight:500;color:var(--muted);}
   font-size:18px;
   line-height:1.6;
   color:var(--muted);
-  max-width:60ch;
+  max-width:72ch;
+  text-wrap:balance;
   margin:0 0 32px;
 }
 
